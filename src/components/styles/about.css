@@ -1,0 +1,201 @@
+.about-container {
+    position: relative;
+    height: 300px;
+    background-image: url('https://img.freepik.com/free-photo/construction-site-building_74190-1750.jpg?ga=GA1.1.648658519.1720816939&semt=ais_user');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .navbar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+  
+  .about-content {
+    color: white;
+    text-align: center;
+  }
+  
+  .about-content h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+  }
+  
+
+  .info-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    max-width: 1200px;
+    margin: 0 auto; 
+    padding: 0 20px; 
+  
+
+    flex-wrap: wrap; 
+  }
+  
+  .info-box {
+    flex: 1;
+    width: 100%; 
+    max-width: 400px; 
+    margin: 10px;
+    padding: 20px;
+    background: rgba(247, 247, 247, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(10, 10, 10, 0.1);
+    line-height: 1.6; 
+  }
+  
+  .info-box h1 {
+    font-size: 2.5rem; 
+    margin-bottom: 10px; 
+  }
+  
+  .info-box h3 {
+    color: gray;
+    margin-bottom: 5px; 
+  }
+  
+  .info-box p {
+    line-height: 1.4; 
+  }
+  
+  .image-box {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+  }
+  
+  .image-box img {
+    max-width: 100%; 
+    max-height: 100%; 
+    border-radius: 10px;
+  }
+  @media (max-width: 768px) {
+    .info-container{
+        flex-direction: column;
+    }
+   .info-box p{
+    word-wrap: break-word;
+    word-break: break-word;
+    white-space: normal;
+    line-height: 1.8;
+   }
+   .info-box {
+    padding: 10px;
+    margin: 2px;
+  }
+  }
+
+  .stats {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .stats header {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .stats-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .stats-item {
+    flex: 1;
+    min-width: 200px;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .stats-item:hover {
+    transform: translateY(-5px);
+  }
+  
+  
+  
+  .count {
+    font-size: 3rem;
+    font-weight: lighter;
+    color: #333;
+  }
+  
+  .label {
+    font-size: 1.2rem;
+    color: #666;
+  }
+ .stat-icon{
+    color: gold;
+    font-size: 30px;
+ }
+
+
+ .team-section {
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+  .team-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .team-member {
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    background-color: white;
+    text-align: center;
+  }
+  
+  .team-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .team-member h2 {
+    font-size: 1.5em;
+    margin: 10px 0 5px;
+  }
+  
+  .team-member p {
+    margin: 5px 0;
+    background: rgb(196, 196, 196);
+    color: white;
+    border-radius: 15px;
+    font-size: large;
+  }
+  
+  @media (max-width: 1024px) {
+    .team-member {
+      flex: 1 1 calc(50% - 20px);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .team-member {
+      flex: 1 1 100%;
+    }
+  }
+  

@@ -1,0 +1,102 @@
+/* src/Header.css */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent; /* Initially transparent */
+    color: #fff;
+    padding: 20px;
+    position: fixed; /* Fixed position to stay at the top */
+    width: 100%;
+    transition: background-color 0.3s;
+    z-index: 1000; /* Ensure it stays on top */
+  }
+  
+  .header.scrolled {
+    background-color: #fff; /* White background on scroll */
+    color: #333;
+  }
+  
+  .header h1 {
+    margin: 0;
+  }
+  
+  .nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 20px 20px;
+    padding: 0;
+  }
+  
+  .nav ul li {
+    position: relative;
+  }
+  
+  .nav ul li a {
+    color: inherit; /* Inherit color from header */
+    text-decoration: none;
+    padding: 10px;
+    transition: color 0.3s;
+  }
+  
+  .nav ul li a:hover {
+    color: #ccc;
+  }
+  
+  .nav ul li a::after {
+    content: '';
+    display: block;
+    height: 2px;
+    background: currentColor;
+    width: 0;
+    transition: width 0.3s;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  
+  .nav ul li a:hover::after {
+    width: 40px;
+    margin-top: 10px;
+    margin-left: 10px;
+    background-color: gold;
+  }
+  
+  .menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: inherit;
+    font-size: 24px;
+    cursor: pointer;
+    margin-right: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .nav {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      background-color: white; /* Background color for the mobile menu */
+      color: black;
+      padding: 10px 0;
+    }
+  
+    .nav.open {
+      display: flex;
+    }
+  
+    .nav ul {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .menu-toggle {
+      display: block;
+    }
+  }
+  

@@ -1,0 +1,268 @@
+.home {
+    position: relative;
+    height: 100vh; 
+    background: url('https://img.freepik.com/free-photo/medium-shot-side-view-engineer-architect-supervising-construction_23-2148233780.jpg?semt=ais_user') no-repeat center center;
+    background-size: cover; 
+    background-attachment: fixed; 
+    background-repeat: no-repeat; 
+    background-position: center center; 
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .welcome-message {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  }
+  
+  .welcome-message h1 {
+    font-size: 3em;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .welcome-message p {
+    font-size: 1.2em;
+    margin: 10px 0;
+  }
+  
+  .welcome-message .btn {
+    background-color: transparent;
+    color: white;
+    border: 2px solid gold;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .welcome-message .btn:hover {
+    background-color:gold;
+    color:white;
+  }
+  
+
+  .home-service{
+ position: relative;
+height: 100vh; 
+display: flex;
+gap: 70px;
+
+}
+.home-service-arc{
+    width: 600px;
+    height: 100%;
+}
+.home-service-arc p{
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 40px;
+    font-size: 15px;
+    color: gray;
+}
+.home-service-arc h1{
+color: black;
+}
+.home-service-form {
+    width: 400px;
+    margin-top: 40px;
+    background-color: rgb(240, 240, 240);
+    box-shadow: 0 4px 8px rgba(128, 128, 128, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .home-service-form h3, .home-service-form h5 {
+    text-align: center;
+    margin: 10px 0;
+  }
+  
+  .home-service-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+  }
+  
+  .home-service-form form input,
+  .home-service-form form textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  @media (max-width: 768px) {
+    .home-service-form {
+      width: 90%;
+    }
+    .home-service{
+        flex-direction: column;
+    }
+  }
+  
+
+
+  .services-container {
+    text-align: center;
+    margin-top: 40px;
+    width: 100%;
+    background-color: #f0f0f0;
+  }
+  
+  .services-heading {
+    font-size: 34px;
+    margin-top: 50px;
+  }
+  
+  .services-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .service-item {
+    width: 300px;
+    height: 300px;
+    background-color:white;
+    /* box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    margin-bottom: 15px;
+    flex-direction: column;
+    text-align: center;
+  }
+  .service-item:hover{
+    box-shadow: 0 0 10px rgba(253, 227, 80, 0.8)
+  }
+  .service-icon{
+    font-size: 30px;
+  }
+  @media (max-width: 625px) {
+    .services-container{
+        margin-top: 300px;
+    }
+    .services-row{
+        flex-direction: column;
+    }
+  }
+
+
+
+
+  .projects-container {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .projects-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .project-item {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+  }
+  
+  .project-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .project-item:hover img {
+    transform: scale(1.1);
+  }
+  
+  .view-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+
+
+   .testimony {
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+  .testimonial-slides {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .testimonial-item {
+  
+    max-width: 500px; 
+    margin: 0 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background-color: white;
+    text-align: left; 
+  }
+  
+  .testimonial-item img {
+    /* position: absolute; */
+    top: -20px;
+    left: -20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 3px solid white;
+  }
+  
+  .testimonial-item h3 {
+    margin-top: 40px;
+  }
+  
+  .testimonial-item p {
+    margin-top: 10px;
+  }
+  
+  .testimonial-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .dot.active {
+    background-color: #717171;
+  }
+  @media (max-width: 768px) {
+    .testimonial-slides{
+        flex-direction: column;
+    }
+  }
