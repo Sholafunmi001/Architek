@@ -1,6 +1,7 @@
 
 import React, { useState, useEffect } from 'react';
-import './styles/about.css'; import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import './styles/about.css';
+ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSmile, faTasks, faHeadphones, faUsers } from '@fortawesome/free-solid-svg-icons';
 function About() {
   const [happyClients, setHappyClients] = useState(0);
@@ -40,7 +41,7 @@ function About() {
     
     setTimeout(() => {
       intervals.forEach((interval) => clearInterval(interval));
-    }, 5000); 
+    }, 10000); 
   };
 
   useEffect(() => {

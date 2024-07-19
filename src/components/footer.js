@@ -37,13 +37,15 @@ function Footer() {
         <div className='footer-section service'>
         <h3>Our services</h3>
           <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#home">Architectural design</a></li>
+            <li><a href="#home">Interior design</a></li>
+            <li><a href="#home">Urban Planning</a></li>
+            <li><a href="#home">Building Information Modeling (BIM)</a></li>
+            <li><a href='#home'>Project Management</a></li>
+            <li><a href='#home'>Sustainability Consulting</a></li>
           </ul>
         </div>
-        <div className="footer-section contact">
+        <div className="footer-section contacts">
           <h3>Contact Us</h3>
           <h5>A108 Adam Street <br/> New York, NY 535022 </h5>
           <p>Email: architek@gmail.com</p>

@@ -28,13 +28,13 @@ function Header() {
 
   return (
     <header className={`header ${scrolled ? 'scrolled' : ''}`}>
-      <h1>Architek</h1>
+      <h1> <Link to="/" >Architek</Link> </h1>
       <nav className={menuOpen ? 'nav open' : 'nav'}>
         <ul>
         <li><Link to="/">Home</Link></li>
         <li><Link to="/about">About</Link></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+        <li><Link to='/services'>Services</Link></li>   
+        <li><Link to='/contact'>Contact</Link></li>
         </ul>
       </nav>
       <button className="menu-toggle" onClick={toggleMenu}>

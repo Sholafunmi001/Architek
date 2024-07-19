@@ -81,7 +81,7 @@ function Home() {
     <div className='home-service'>
       <div className='home-service-arc' >
         <h1>Architek ?</h1>
-        <p>The name "Architek" is derived from the fusion of "architecture" and "technology, <br/>" representing the perfect blend of traditional architectural principles with modern <br/> technological advancements. It embodies our commitment to leveraging cutting-edge <br/> tools and techniques to create innovative and sustainable designs. "Architek" reflects <br/> our belief in the power of technology to enhance and elevate the art of architecture. <br/> It signifies a forward-thinking approach, where creativity meets functionality. <br/> Our name also conveys a sense of precision and professionalism, essential traits <br/> in the world of architecture. At Architek, we strive to transform visions into reality,<br/> building structures that stand the test of time.</p>
+        <p>Architek was founded in 2002 by David Gates with a vision to integrate traditional<br/> architectural principles with modern technology. Early challenges were overcome<br/> through innovative projects like the acclaimed Green Tower in 2005. The firm expanded<br/> internationally in 2010, embracing tools like BIM and virtual reality to enhance<br/> design processes. David Gates' leadership fostered a culture of continuous learning<br/> and collaboration, nurturing young talent. Today, Architek is renowned for its<br/> sustainable and creative designs, remaining a leader in architectural innovation<br/> while staying true to its core values of innovation, sustainability, and precision. <img className='billion' src='https://img.freepik.com/free-photo/modern-architect-front-building_23-2147702104.jpg?ga=GA1.1.396312734.1721154201&semt=ais_user'></img></p>
       </div>
       <div className='home-service-form'>
       <h3>Want to know more about us ?</h3>
@@ -92,6 +92,7 @@ function Home() {
 <input type='email' placeholder='Email'></input>
 <input type='number' placeholder='Phone'></input>
 <textarea placeholder='Message'></textarea>
+<button>Get a Qoute</button>
         </form>
       </div>
     </div>
@@ -165,7 +166,7 @@ function Home() {
           ))}
         </div>
       </div>
-    <Footer />
+
     </div>
   );
 }

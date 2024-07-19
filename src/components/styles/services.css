@@ -1,0 +1,149 @@
+.service-container {
+    position: relative;
+    height: 300px;
+    background-image: url('https://img.freepik.com/free-photo/crop-architect-opening-blueprint_23-2147710985.jpg?ga=GA1.1.648658519.1720816939&semt=sph');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .serviced-container{
+    text-align: center;
+    margin-top: 40px;
+    width: 100%;
+    background-color: rgb(240, 240, 240);
+  }
+.services-heading{
+  text-align: center;
+}
+
+  
+  .service-content {
+    color: white;
+    text-align: center;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .service-content h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+  }
+
+  
+.plans-container {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+}
+
+.plans-container h1 {
+  margin-bottom: 40px;
+  font-size: 2.5em;
+  color: #333;
+}
+
+.plans {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.plan {
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  width: 300px;
+  text-align: left;
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.plan:hover {
+  transform: translateY(-10px);
+}
+
+.plan h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.plan-icon {
+  color: #4caf50;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.plan ul {
+  list-style: none;
+  padding: 0;
+}
+
+.plan ul li {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.plan ul li:before {
+  content: '\f058';
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  margin-right: 10px;
+  color: #4caf50;
+}
+
+.price {
+  margin-top: 20px;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #333;
+}
+
+@media (max-width: 900px) {
+  .plans {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .plan {
+    width: 80%;
+  }
+}
+
+
+.how-we-work {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f0f0f0;
+}
+
+.steps {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.step {
+  flex: 1 1 300px;
+  margin: 20px;
+  padding: 20px;
+  background-color:white;
+  border-radius: 8px;
+}
+
+.icon {
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: gold;
+}
+
+@media (max-width: 768px) {
+  .step {
+    flex-basis: calc(50% - 40px);
+  }
+}
+
