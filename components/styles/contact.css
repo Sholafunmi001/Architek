@@ -1,0 +1,133 @@
+
+.contact{
+    background: rgba(247, 247, 247, 0.8);
+}
+.contact-container {
+    position: relative;
+    height: 300px;
+    background-image: url('https://img.freepik.com/free-photo/construction-site-building_74190-1750.jpg?ga=GA1.1.648658519.1720816939&semt=ais_user');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .contact-content {
+    color: white;
+    text-align: center;
+  }
+  
+  .contact-content h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+  }
+  
+
+  .contact-info {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    gap: 10px;
+  }
+  
+  .info-item {
+    flex: 1;
+    text-align: center;
+    background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(10, 10, 10, 0.1);
+  }
+  
+  .larger {
+    flex: 2;
+  }
+  
+  .icon-circle {
+    width: 50px;
+    height: 50px;
+    border: 2px dotted gold;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px auto 10px auto;
+  }
+  
+  .icon {
+    font-size: 24px;
+  }
+  
+  h1 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+  }
+  
+  p {
+    font-size: 1rem;
+    margin: 0;
+
+  }
+
+
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 20px;
+  }
+
+  .map-container {
+    flex: 1;
+    margin-right: 20px;
+  }
+
+  .contact-form {
+    flex: 1;
+  }
+
+  .input-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    gap: 10px;
+  }
+
+  input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  textarea{
+    height: 50px;
+    width: 100%;
+  }
+
+  button {
+    display: block;
+    width: 150px;
+    padding: 10px;
+    background-color: gold;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    margin: 10px 38%;
+  }
+
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+
+    .map-container {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+    .contact-info{
+        flex-direction: column;
+    }
+  }
+  
