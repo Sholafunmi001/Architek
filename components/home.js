@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './styles/home.css';
 import Footer from './footer';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -67,6 +67,15 @@ function Home() {
 
   const [currentSlide, setCurrentSlide] = useState(0);
 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentSlide(prevSlide => (prevSlide + 1) % testimonials.length);
+    }, 5000); // 5000 milliseconds = 5 seconds
+  
+    // Cleanup the interval on component unmount
+    return () => clearInterval(interval);
+  }, []);
+  
   
 
   return (
@@ -144,27 +153,13 @@ function Home() {
           ))}
         </div>
       </div>
-      <div className='testimony'>
-        <h1>Testimonials</h1>
-        <div className='testimonial-slides'>
-          {testimonials.slice(currentSlide * 2, currentSlide * 2 + 2).map((testimonial, index) => (
-            <div key={index} className='testimonial-item'>
-              <img src={testimonial.picture} alt={testimonial.name} className='testimonial-image' />
-              <h3>{testimonial.name}</h3>
-              <p>{testimonial.review}</p>
-            </div>
-          ))}
-        </div>
-        <div className='testimonial-dots'>
-          {[...Array(Math.ceil(testimonials.length / 2)).keys()].map((dot, index) => (
-            <span
-              key={index}
-              className={`dot ${currentSlide === index ? 'active' : ''}`}
-              onClick={() => setCurrentSlide(index)}
-            ></span>
-          ))}
-        </div>
-      </div>
+      
+  <div className="testimonial-carousel">
+    <img src={testimonials[currentSlide].picture} alt={testimonials[currentSlide].name} />
+    <h2>{testimonials[currentSlide].name}</h2>
+    <p>{testimonials[currentSlide].review}</p>
+  </div>
+
 
     </div>
   );
