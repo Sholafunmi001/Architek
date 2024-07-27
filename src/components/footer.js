@@ -11,18 +11,18 @@ function Footer() {
         <div className="footer-section about">
           <h2>Architek</h2>
           <div className="social-icons">
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+          <div className="social-icons-div"><a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faTwitter} />
-            </a>
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+            </a></div> 
+           <div className='social-icons-div'> <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faFacebookF} />
-            </a>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+            </a></div>
+            <div className='social-icons-div'><a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faInstagram} />
-            </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+            </a></div>
+           <div className='social-icons-div'> <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faLinkedinIn} />
-            </a>
+            </a></div>
           </div>
         </div>
         <div className="footer-section links">

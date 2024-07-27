@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import './styles/home.css';
-import Footer from './footer';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPencilAlt, faCouch, faTasks, faCity, faCube, faLeaf } from '@fortawesome/free-solid-svg-icons';
 import image1 from '../images/image1.jpeg'
@@ -15,11 +15,10 @@ import image9 from '../images/image9.jpeg';
 import image10 from '../images/image10.jpeg';
 import image11 from '../images/image11.jpeg';
 import image12 from '../images/image12.jpeg';
-import picture1 from '../images/picture1.avif';
+import picture1 from '../images/picture1.avif'
 import picture2 from '../images/picture2.avif';
 import picture3 from '../images/picture3.avif';
 import picture4 from '../images/picture4.avif';
-
 
 function Home() {
   const images = [
@@ -67,15 +66,25 @@ function Home() {
 
   const [currentSlide, setCurrentSlide] = useState(0);
 
-  
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentSlide(prevSlide => (prevSlide + 1) % Math.ceil(testimonials.length / 2));
+    }, 3000);
 
+    return () => clearInterval(interval);
+  }, [testimonials.length]);
+
+
+  
   return (
     <div className='main'>
     <div className="home">
       <div className="welcome-message">
         <h1>Welcome to Architek</h1>
         <p>Welcome to Architek, where innovative architecture <br/> meets stunning design.Explore our portfolio to see how we transform visions into reality!</p>
-        <button className="btn">Get Started</button>
+        <Link to="/" className="btn-link">
+            <button className="btn">Get Started</button>
+          </Link>
       </div>
     </div>
     <div className='home-service'>
@@ -86,13 +95,15 @@ function Home() {
       <div className='home-service-form'>
       <h3>Want to know more about us ?</h3>
       <h5>Get a qoute</h5>
+      
         <form>
-
-<input type='name' placeholder='Name'></input>
-<input type='email' placeholder='Email'></input>
-<input type='number' placeholder='Phone'></input>
-<textarea placeholder='Message'></textarea>
-<button>Get a Qoute</button>
+          <input type='name' placeholder='Name'></input>
+          <input type='email' placeholder='Email'></input>
+          <input type='number' placeholder='Phone'></input>
+          <textarea placeholder='Message'></textarea>
+          <Link className='link' to="/">
+            <button >Get Started</button>
+          </Link>
         </form>
       </div>
     </div>
